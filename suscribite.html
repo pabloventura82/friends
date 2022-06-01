@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<title> friends </title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="f.ico">
+		<link rel="stylesheet" type="text/css" href="friends.css">
+
+	</head>
+    <header>
+    	<nav>
+    		<ul>
+    			<li> <a href="amigos.html"> Inicio</a></li>
+    			<li><a href="Masinfo.html"> Mas info</a></li>
+    			<li><a href="Suscribite.html"> Suscribite</a></li>
+    	</nav>
+    </header>
+    <body>
+    	
+    	<main>
+        <div class="fotosus">
+           	<img src="friends cartoon.jpg">
+           </div>
+		<form onsubmit="confirmSubmit()">
+             	
+             <div class="datospersonales">		
+			<h3> Datos Personales </h3>
+			<br>
+			 <h3>Nombre: <input type="text" name="" id="Nombre" >
+             <h3> Apellido: <input type="text" name="" id="Apellido" >
+             <h3> Mail:   <input type="text" name="" id= "email" placeholder="micorreo@correo.com.ar">
+             </div>
+              <br>
+			   <div class="paises">
+			   <h3>Indique Pais:</h3>
+			
+			    Argentina<input type="radio" name="pais">
+			    <br><br>
+			    Brasil<input type="radio" name="pais" required>
+			    <br><br>
+			    Uruguay<input type="radio" name="pais" required>
+			    <br><br>
+			    Chile <input type="radio" name="pais"required>
+			    <br>
+			   </div>
+		        <div class="Comentario">
+			    <h3>Dejar Comentario:</h3>
+		        <textarea cols="40" rows="5"> 
+			     </textarea>
+			    </div>
+			<br>
+			  <div class="Intereses">
+			   <h3>Indique sus intereses:</h3>
+			    Peliculas<input type="checkbox" name="peliculas">
+			   <br><br>
+			    Series <input type="checkbox" name="Series" >
+			   <br>
+			  </div>
+			  <div class= "botones">
+
+            <input type="submit" value="Enviar">
+			<br>
+			<br>
+			<input type="reset" value="Limpiar" >
+			  </div>
+			
+		</form>
+		    <script> 
+		       function confirmSubmit(){
+                var agree=confirm("Esta seguro que desea continuar?");
+                if (agree)
+                	return true;
+                else return false;
+            }
+            </script>
+
+	</main>
+    	
+   	 	
+    </body>
